@@ -68,15 +68,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .background {
   background-color: #2f2f2f;
-  width: 110%;
+  width: 100%;
   display: flex;
   margin: 0px;
+  padding: 0;
   overflow: hidden;
   justify-content: center;
 }
 
 .wrapper {  
-  padding: 20px;  
+  padding: 10px;  
   max-width: 1200px;
   width: 100%;
 }
@@ -220,11 +221,16 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 60%;
   color: #fff6;
 }
+@media (max-width: 700px) {
+  .services__content {
+    flex: 0 0 100%;
+  }
+}
 .services__content a{
   color: #b69b69;
 }
 .services__content p {
-  width: 400px;
+  width: 100%;
 }
 .services__img {
   padding: 10px;
@@ -278,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio__element-content {
   display: inline-block;
   width: 50%;
+  height: 100%;
   background: #b69b69;
   position: relative;
   top: 0;
@@ -292,6 +299,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   text-transform: uppercase;
   
+}
+@media (max-width: 769px) {
+  .portfolio__element-title {font-size: 20px}
 }
 .portfolio__element-title::after{
   content: '';
@@ -353,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 769px) {
   .portfolio__element-title  {
-    font-size: 24px;
+    font-size: 20px;
   }
   .portfolio__element-content {
     height: 100%
@@ -366,6 +376,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
 }
 @media (max-width: 426px) {
+  .portfolio__element-title {font-size: 18px}
   .feedbacks-and-contact-us {
     flex-direction: column;
   }
